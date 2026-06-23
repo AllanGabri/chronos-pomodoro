@@ -1,4 +1,4 @@
-
+import { Container } from './styles/components/container';
 
 import './styles/theme.css';
 import './styles/global.css';
@@ -8,26 +8,18 @@ export function App() {
 
     return (
     <>
-        <div className="container">
-            <div className="content">
-                <section>LOGO</section>
-            </div>
-        </div>
-        <div className="container">
-            <div className="content">
+        <Container>
+            <section>LOGO</section>
+        </Container>
+       <Container>
                 <section>MENU</section>
-            </div>
-        </div>
-        <div className="container">
-            <div className="content">
+        </Container>
+        <Container>
                 <section>FORM</section>
-            </div>
-        </div>
-        <div className="container">
-            <div className="content">
+        </Container> 
+        <Container>
                 <section>FOOTER</section>
-            </div>
-        </div>
+        </Container>
     </>
     );
 }
